@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>발표와토론 타이머 프로젝트</title>
+  <link href="/toro.css" stlye="stylesheet">
+  <link href="/timer.css" rel="stylesheet">
+  <!--
+  <style>
+    #title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+#title .title-pa {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+#title .title-pa button {
+  width: 4rem;
+  height: 3rem;
+  font-size: 20px;
+  border: none;
+  background-color: wheat;
+}
+#title :nth-child(2) {
+  font-size: 6rem;
+}
+.title-who-agreeM {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 24px 32px;
+  border-radius: 30px;
+  background: white;
+}
+
+.timer__part {
+  font-size: 25rem;
+  font-weight: bold;
+}
+
+.timer__btn {
+  width: 50px;
+  height: 50px;
+  margin-left: 16px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background: #8208e6;
+  cursor: pointer;
+}
+
+.timer__btn--start {
+  background: #00b84c;
+}
+
+.timer__btn--stop {
+  background: #ff0256;
+}
+
+  </style>
+  -->
+</head>
+<body>
+  <!--title-->
+  <section id="title" class="title">
+    <div class="title-pa"><span>발표와토론 <span>타이머</span></span></div>
+    <div class="title-pa"><span id="title-who">안녕하세요</span> <button onclick="whocheck()">확인</button></div>
+  </section>
+  <!--main-->
+  <!--
+  <section id="main" class="main">
+    <p id="timeset" value="20">00:20</p>
+    <div class="main-control">
+      <button id="ctl-start" onclick="timerStart()">START</button>
+      <button id="ctl-pause" onclick="timerCheck()">STOP</button>
+    </div>
+  </section>
+  -->
+  <section id="main" class="main">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div class="timer"></div>
+  </section>
+  <!--sukyee-->
+<div id="sukyee-title"><button>숙의</button></div>
+
+  <section id="sukyee" class="sukyee-on">
+    <div class="timeer">
+        <p id="timeset">01:00</p>
+        <div class="main-control">
+          <button id="ctl-start" onclick="timerStart()">START</button>
+          <button id="ctl-reset" onclick="timerReset()">RESET</button>
+        </div>
+    </div>
+    <div class="sukyee-check">
+      <div class="sukyee-check-ch">
+        <span>찬성</span>
+        <button id="sukyee-check-btn-Y"><span class="suk-btn-num">2</span></button>
+      </div>
+
+      <div class="sukyee-check-ch">
+        <span>반대</span>
+        <button id="sukyee-check-btn-N"><span class="suk-btn-num">2</span></button>
+      </div>
+    </div>
+  </section>
+  <!--footer-->
+  <section id="footer" class="footer"></section>
+  <script src="toro.js"></script>
+  <script src="timer.js"> </script>
+</body>
+</html>

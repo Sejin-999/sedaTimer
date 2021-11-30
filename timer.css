@@ -1,0 +1,107 @@
+#title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+#title .title-pa {
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
+#title .title-pa button {
+  width: 2.5rem;
+  height: 3rem;
+  font-size: 10px;
+  border: none;
+  background-color: white;
+}
+#title :nth-child(2) {
+  font-size: 3rem;
+}
+.title-who-agreeM {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  font-family: sans-serif;
+  display: inline-block;
+  border-radius: 30px;
+  background: white;
+}
+
+.timer__part {
+  font-size: 11rem;
+  font-weight: bold;
+}
+
+.timer__btn {
+  width: 50px;
+  height: 50px;
+  margin-left: 16px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background: #8208e6;
+  cursor: pointer;
+}
+
+.timer__btn--start {
+  background: #00b84c;
+}
+
+.timer__btn--stop {
+  background: #ff0256;
+}
+#sukyee-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sukyee-title button {
+  font-size: 2rem;
+  border: none;
+  background-color: white;
+}
+.sukyee-on {
+  display: block;
+}
+
+#timeset {
+  text-align: center;
+  font-size: 10rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.timeer .main-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeer .main-control button {
+  margin-left: 3rem;
+  width: 3rem;
+  height: 2rem;
+}
+
+.sukyee-check {
+  text-align: right;
+  font-size: 2rem;
+}
+
+.sukyee-check button {
+  border: none;
+  font-size: 2rem;
+  margin: 2rem 0 0 2rem;
+}
+
+#ctl-start,
+#ctl-reset {
+  font-size: 0.3rem;
+}
