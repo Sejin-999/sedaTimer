@@ -1,79 +1,133 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>발표와토론 타이머 프로젝트</title>
-  <link href="/toro.css" stlye="stylesheet">
-  <link href="/timer.css" rel="stylesheet">
-  <!--
   <style>
     #title {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-#title .title-pa {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-}
-#title .title-pa button {
-  width: 4rem;
-  height: 3rem;
-  font-size: 20px;
-  border: none;
-  background-color: wheat;
-}
-#title :nth-child(2) {
-  font-size: 6rem;
-}
-.title-who-agreeM {
-  font-size: 1rem;
-  color: rgba(0, 0, 0, 0.4);
-}
-#main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.timer {
-  font-family: sans-serif;
-  display: inline-block;
-  padding: 24px 32px;
-  border-radius: 30px;
-  background: white;
-}
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
 
-.timer__part {
-  font-size: 25rem;
-  font-weight: bold;
-}
+    #title .title-pa {
+      font-size: 10px;
+      margin-top: 0.5rem;
+    }
 
-.timer__btn {
-  width: 50px;
-  height: 50px;
-  margin-left: 16px;
-  border-radius: 50%;
-  border: none;
-  color: white;
-  background: #8208e6;
-  cursor: pointer;
-}
+    #title .title-pa button {
+      width: 2.5rem;
+      height: 3rem;
+      font-size: 10px;
+      border: none;
+      background-color: white;
+    }
 
-.timer__btn--start {
-  background: #00b84c;
-}
+    #title :nth-child(2) {
+      font-size: 3rem;
+    }
 
-.timer__btn--stop {
-  background: #ff0256;
-}
+    .title-who-agreeM {
+      font-size: 1rem;
+      color: rgba(0, 0, 0, 0.4);
+    }
 
+    #main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .timer {
+      font-family: sans-serif;
+      display: inline-block;
+      border-radius: 30px;
+      background: white;
+    }
+
+    .timer__part {
+      font-size: 11rem;
+      font-weight: bold;
+    }
+
+    .timer__btn {
+      width: 50px;
+      height: 50px;
+      margin-left: 16px;
+      border-radius: 50%;
+      border: none;
+      color: white;
+      background: #8208e6;
+      cursor: pointer;
+    }
+
+    .timer__btn--start {
+      background: #00b84c;
+    }
+
+    .timer__btn--stop {
+      background: #ff0256;
+    }
+
+    #sukyee-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #sukyee-title button {
+      font-size: 2rem;
+      border: none;
+      background-color: white;
+    }
+
+    .sukyee-on {
+      display: block;
+    }
+
+    #timeset {
+      text-align: center;
+      font-size: 10rem;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    .timeer .main-control {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .timeer .main-control button {
+      margin-left: 3rem;
+      width: 3rem;
+      height: 2rem;
+    }
+
+    .sukyee-check {
+      text-align: right;
+      font-size: 2rem;
+    }
+
+    .sukyee-check button {
+      border: none;
+      font-size: 2rem;
+      margin: 2rem 0 0 2rem;
+    }
+
+    #ctl-start,
+    #ctl-reset {
+      font-size: 0.3rem;
+    }
   </style>
-  -->
+
 </head>
+
 <body>
   <!--title-->
   <section id="title" class="title">
@@ -95,15 +149,15 @@
     <div class="timer"></div>
   </section>
   <!--sukyee-->
-<div id="sukyee-title"><button>숙의</button></div>
+  <div id="sukyee-title"><button>숙의</button></div>
 
   <section id="sukyee" class="sukyee-on">
     <div class="timeer">
-        <p id="timeset">01:00</p>
-        <div class="main-control">
-          <button id="ctl-start" onclick="timerStart()">START</button>
-          <button id="ctl-reset" onclick="timerReset()">RESET</button>
-        </div>
+      <p id="timeset">01:00</p>
+      <div class="main-control">
+        <button id="ctl-start" onclick="timerStart()">START</button>
+        <button id="ctl-reset" onclick="timerReset()">RESET</button>
+      </div>
     </div>
     <div class="sukyee-check">
       <div class="sukyee-check-ch">
@@ -122,4 +176,5 @@
   <script src="toro.js"></script>
   <script src="timer.js"> </script>
 </body>
+
 </html>
